@@ -4,15 +4,15 @@ body{
 
 .barra_topo{
     display: flex;
-    width: 100%;
+    width: 1366px;
     height: 54px;
     align-items: center;
+    margin: 0 auto;
 }
 
 .icones{
     display: flex;
     width: 118px;
-    justify-content: center;
     margin: 0 auto;
 }
 
@@ -56,34 +56,68 @@ body{
 }
 
 .caixa_stories{
+    background-color: hotpink;
     display: flex;
     width: 614px;
     height: 118px;
     color: #FFFFFF;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.seila{
-    display: flex;
+.stories{
+    background-color: slategray;
+    margin: 0 auto;
+}
+
+.container{
     background-color: blue;
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    display: flex;
+    background-color: green;
+    flex-direction: column;
+}
+
+.feed{
+    background-color: purple;
+    width: 935px;
+}
+
+.post{
+    margin-top: 10px;
+    background-color: teal;
     width: 614px;
     margin: 0 auto;
-    height: 118px;
-    color: #DBDBDB;
-    align-items: center;
+    margin-top: 15px;
 }
 
-.conteudo{
-    background-color: red;
+.foto_perfil{
+    background-color: tan;
+    height: 60px;
+}
 
+.foto{
+    width: 612px;
+    height: 612px;
+}
+
+.icones_do_feed{
+    background-color: rosybrown;
     display: flex;
-    margin: 0 auto;
+    width: 53px;
+    height: 15.13px;
+    justify-content: space-between;
 }
 
 .sidebar{
+    background-color: red;
     display: flex;
     flex-direction: column;
-    width: 293px;
     margin: 0 auto;
 }
 
@@ -120,9 +154,6 @@ body{
     margin: 10px;
 }
 
-
-
-
 .txt h1{
     margin-bottom: 6px;
     font-weight: 500;
@@ -140,8 +171,4 @@ body{
     color: #139EF2;
     font-weight: 500;
     font-size: 12px;
-}
-
-.ficaembaixo{
-    width: 612px;
 }
