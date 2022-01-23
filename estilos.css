@@ -74,6 +74,8 @@ body{
     margin: 0 auto;
     position: relative;
     top: 34px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .storie_container{  
@@ -142,6 +144,7 @@ body{
     left: 745px;
     top: 137px;
     z-index: 8;
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))
 }
 
 .container{
@@ -154,7 +157,7 @@ body{
     flex-direction: column;
 }
 
-.tampa{
+/*.tampa{
     background-color: #FAFAFA;
     position: relative;
     height: 85px;
@@ -162,7 +165,7 @@ body{
     bottom: 1660px;
     left: 774px;
     z-index: 4;
-}
+}*/
 
 .feed{
     width: 935px;
@@ -369,4 +372,123 @@ body{
     font-size: 11px;
     font-weight: 400;
     color: #C7C7C7;
+}
+
+.barra_inferior{
+    display: none;
+}
+
+@media (max-width: 935px){
+    body{
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .sidebar{
+        display: none;
+    }
+    .barra_topo{
+        width: 935px;
+        justify-content: space-between;
+        left: -30px;
+    }
+
+    .icones{
+        right: 0;
+    }
+
+    .logo, .logotipo, .divisoria1{
+        position: relative;
+        left: 35px;
+    }
+}
+
+@media (max-width: 614px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .barra_topo{
+        width: 614px;
+        left: 0;
+        overflow-x: hidden;
+    }
+    .tampa, .divisoria1, .box_search, .pesquisar, .sla, .coracao, .pessoa, .seta{
+        display: none;
+    }
+
+    .logotipo{
+        position: relative;
+        left: 190px;
+    }
+
+    .icones{
+        position: relative;
+        left: 60px;
+    }
+
+    .logo{
+        position: relative;
+        right: 35px;
+    }
+
+    .caixa_stories{
+        width: 614px;
+        text-overflow: hide;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .feed{
+        width: 614px;
+    }
+
+    .stories{
+        transform: translate(15%);
+    }
+
+    .stories_background{
+        transform: translate(12%);
+    }
+
+    .post, .foto_perfil, .foto .img{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .meme{
+        position: absolute;
+        left: -10px;
+    }
+
+    .mem {
+        position: absolute;
+        left: -14px;
+    }
+
+    .meme h1{
+        left: 7px;
+    }
+    .barra_inferior{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom:0;
+        left: 0;
+        display: flex;
+        height: 54px;
+        width: 614px;
+        background-color: #FFFFFF;
+    }
+    .barra_inferior ion-icon{
+        width: 16.51px;
+        height: 16.37px;
+        color: #000000;
+    }
+
+    ion-icon:home-outline{
+        filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))
+    }
 }
