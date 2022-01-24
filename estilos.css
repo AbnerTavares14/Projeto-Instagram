@@ -29,29 +29,31 @@ body{
 }
 
 .logo{
-    margin-right: 3px;
+    position: relative;
+    right: 80px;
 }
 
 .divisoria1{
+    position: relative;
     border-right: 1px solid #DBDBDB;
     width: 1px;
     height: 22px;
-    margin-right: 7px;
+    right: 235px;
 }
 
 .logotipo{
+    position: relative;
     width: 103px;
     height: 29px;
-    margin-right: 214px;
+    right: 225px;    
 }
 
 .box_search{
     display: flex;
     flex-direction: column;
-    border: solid #DBDBDB;
+    border: 1px solid #DBDBDB;
     height: 28px;
     width: 215px;
-    border-radius: 3px;
     justify-content: center;
     align-items: center;
     margin-right: 214px;
@@ -215,6 +217,10 @@ body{
     height: 612px;
 }
 
+.foto video{
+    width: 100%;
+}
+
 .icones_do_feed{
     display: flex;
     color: #000000;
@@ -223,6 +229,57 @@ body{
     justify-content: space-between;
     margin-top: 7px;
     margin-left: 15.75px;
+}
+
+.comentarios{
+    padding-left: 12px;
+}
+
+.comentarios h1{
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.comentarios strong{
+    font-weight: bold;
+}
+
+.comentarios h2{
+    color: rgba(var(--f52,142,142,142),1);
+    margin-bottom: 10px;
+}
+
+.comentarios h3{
+    color: #262626;
+    margin-bottom: 3px;
+}
+
+.comentarios h4{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+.comentar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.comentar h1{
+    color: #B2E6FD;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+input{
+    margin-left: 10px;
+    height: 25px;
+    width: 500px;
 }
 
 .flag{
@@ -258,13 +315,12 @@ body{
 }
 
 .sidebar{
-    background-color: #FAFAFA;
+    position: fixed;
     display: flex;
     flex-direction: column;
     /*margin: 0 auto;*/
-    position: relative;
-    right: 132.7px;
-    top: 59.5px;
+    right: 380px;
+    top: 110px;
 }
 
 .sidetxt{
@@ -420,17 +476,17 @@ body{
 
     .logotipo{
         position: relative;
-        left: 190px;
+        left: 182px;
     }
 
     .icones{
         position: relative;
-        left: 60px;
+        left: 85px;
     }
 
     .logo{
         position: relative;
-        right: 35px;
+        left: -30px;
     }
 
     .caixa_stories{
@@ -438,6 +494,7 @@ body{
         text-overflow: hide;
         box-sizing: border-box;
         overflow-x: hidden;
+        top: 0px;
     }
 
     .feed{
@@ -455,6 +512,11 @@ body{
     .post, .foto_perfil, .foto .img{
         width: 100%;
         overflow-x: hidden;
+    }
+
+    .post{
+        margin-top: -30px;
+        top: 30px;
     }
 
     .meme{
