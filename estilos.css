@@ -444,6 +444,13 @@ input{
     .sidebar{
         display: none;
     }
+
+    .box_search{
+        position: relative;
+        width: 215px;
+        left: 130px;
+    }
+
     .barra_topo{
         width: 935px;
         justify-content: space-between;
@@ -454,9 +461,16 @@ input{
         right: 0;
     }
 
-    .logo, .logotipo, .divisoria1{
-        position: relative;
-        left: 35px;
+    .logo{
+        left: 1px;
+    }
+
+    .divisoria1{
+        right: 45px;
+    }
+
+    .logotipo{
+        right: 35px;
     }
 }
 
