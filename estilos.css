@@ -476,7 +476,7 @@ input{
 
     .logotipo{
         position: relative;
-        left: 182px;
+        left: 60px;
     }
 
     .icones{
@@ -532,6 +532,11 @@ input{
     .meme h1{
         left: 7px;
     }
+
+    .espace{
+        height: 30px;
+    }
+
     .barra_inferior{
         display: flex;
         justify-content: space-around;
